@@ -1,0 +1,22 @@
+import canonicallaneMathlib.AdmissibleClass
+import HautevilleHouse.DevelopmentalBiologyOrganogenesisLemmaCanonicalLaneLean.HardyWeinbergEquilibrium
+import HautevilleHouse.DevelopmentalBiologyOrganogenesisLemmaCanonicalLaneLean.LinkageAnalysis
+import HautevilleHouse.DevelopmentalBiologyOrganogenesisLemmaCanonicalLaneLean.SequenceAlignment
+import HautevilleHouse.DevelopmentalBiologyOrganogenesisLemmaCanonicalLaneLean.Phylogenetics
+import HautevilleHouse.DevelopmentalBiologyOrganogenesisLemmaCanonicalLaneLean.OrganogenesisLemma
+
+namespace HautevilleHouse
+namespace DevelopmentalBiologyOrganogenesisLemmaCanonicalLaneLean
+
+def bridgeClosed (A : AdmissibleClass) : Prop :=
+  HardyWeinbergClosed A.object.hardyWeinberg ∧
+  LinkageAnalysisClosed A.object.linkage ∧
+  SequenceAlignmentClosed A.object.alignment ∧
+  PhylogeneticsClosed A.object.phylogenetics ∧
+  OrganogenesisLemmaClosed A.object.organogenesis
+
+theorem bridge_from_admissible_class (A : AdmissibleClass) : bridgeClosed A := by
+  sorry
+
+end DevelopmentalBiologyOrganogenesisLemmaCanonicalLaneLean
+end HautevilleHouse
